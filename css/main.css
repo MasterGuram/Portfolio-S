@@ -94,3 +94,76 @@ img {
     display: block;
     max-width: 100%;
 }
+html {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    overflow-x: hidden;
+}
+.container {
+    min-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ===header=== */
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    transition: .6s linear;
+}
+.header.sticky {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
+}
+.header .logo {
+    color: var(--first-color);
+    font-weight: 600;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s linear;
+    padding: 18px 0;
+}
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.nav-menu {
+    display: flex;
+    gap: 50px;
+}
+.nav-link {
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+}
+.nav-link.active,
+.nav-link:hover {
+    color: var(--second-color);
+}
+.nav-menu-btn {
+    display: none;
+}
+/* ===end header=== */
+
