@@ -343,6 +343,62 @@ body {
 }
 /* === End About Section === */
 
+/* === Skills Section === */
+.skills-description {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.skills-description h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.skills-description p {
+    font-size: var(--normal-font-size);
+}
+.skills-info {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-bottom: 20px;
+}
+.education {
+    min-width: 320px;
+    width: 32%;
+}
+.education .label {
+    color: #fff;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: var(--second-color);
+    display: inline-block;
+}
+.education-list .item {
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    border-bottom: 3px solid var(--second-color);
+    transition: .3s linear;
+}
+.education-list .year {
+    margin-bottom: 15px;
+    font-size: var(--small-font-size);
+    color: var(--first-color);
+    font-weight: 500;
+    display: block;
+}
+.education-list p {
+    color: var(--third-color);
+}
+/* === End Skills Section === */
+
+
+
 
 
 
