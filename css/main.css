@@ -344,6 +344,9 @@ body {
 /* === End About Section === */
 
 /* === Skills Section === */
+.skills .inner-content {
+    padding-bottom: 50px;
+}
 .skills-description {
     max-width: 700px;
     width: 100%;
@@ -386,7 +389,7 @@ body {
     transition: .3s linear;
 }
 .education-list .year {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: var(--small-font-size);
     color: var(--first-color);
     font-weight: 500;
@@ -395,6 +398,97 @@ body {
 .education-list p {
     color: var(--third-color);
 }
+.education .bar {
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    margin-top: 15px;
+    padding: 18px;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+.education .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: var(--small-font-size);
+}
+.info span {
+    font-weight: 500;
+}
+.bar .line {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    border-radius: 2px;
+    background: #c5cadf;
+}
+.bar .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--second-color);
+    border-radius: 2px;
+}
+.bar .html::before {
+    width: 95%;
+}
+.bar .css::before {
+    width: 85%;
+}
+.bar .javascript::before {
+    width: 85%;
+}
+.bar .jquery::before {
+    width: 80%;
+}
+.bar .php::before {
+    width: 75%;
+}
+.work-exp {
+    width: 100%;
+    max-width: 100%;
+}
+.work-exp .work-exp-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.work-exp .experience-card {
+    min-width: 320px;
+    width: 32%;
+    transition: .3s linear;
+}
+.upper h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.upper h5 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: var(--small-font-size);
+}
+.upper span {
+    color: var(--third-color);
+}
+.experience-card .hr {
+    width: 100%;
+    height: 2px;
+    margin: 10px 0 22px;
+    background: var(--liner-color);
+}
+.experience-card p {
+    margin-top: 22px;
+}
+.experience-card:hover,
+.education-list .item:hover,
+.bar:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
 /* === End Skills Section === */
 
 
