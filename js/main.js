@@ -24,7 +24,7 @@ modalCloseBtn.forEach(button => {
 
 //Portfolio section - Modal
 
-const serviceModals = document.querySelectorAll(".portfolio-model")
+const portfolioModals = document.querySelectorAll(".portfolio-model")
 const imgCard = document.querySelectorAll(".img-card")
 const portfolioCloseBtn = document.querySelectorAll(".portfolio-close-btn")
 
