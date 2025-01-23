@@ -797,6 +797,28 @@ body {
 }
 /* === End Our Clients Section === */
 
+/* === Contact Me Section === */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-left {
+    max-width: 418px;
+    width: 100%;
+}
+.contact-left h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.contact-right {
+    max-width: 536px;
+    width: 100%;
+}
+
+/* === End Contact Me Section === */
+
+
 
 
 
