@@ -1,5 +1,45 @@
-//Services section - Modal
+//header scroll effect
+const header = document.querySelector(".header")
+window.addEventListener("scroll", function(){
+    window.scrollY > 10 ? header.classList.add("sticky") : header.classList.remove("sticky")
+})
 
+//Menu items navigation
+window.addEventListener("scroll", function(){
+    const section = document.querySelectorAll("section")
+    const scrollY = window.scrollY
+
+    section.forEach(function(current){
+        let sectionHight = current.offsetHeight
+        let sectionTop = current.offsetYop - 50
+        let sectionId = current.getAttribute("id")
+        let navItem = document.querySelector(`.nav-item a[href*="${sectionId}"]`)
+
+        if(navItem){
+
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHight){
+            navItem.classList.add("active")
+            } else {
+            navItem.classList.remove("active")
+            }
+        }
+
+        
+    })
+})
+
+// Scroll to top button 
+const scrollToTop = document.querySelector(".scrollToTop")
+window.addEventListener("scroll", function(){
+    scrollToTop.classList.toggle("active", this.window.scrollY > 500)
+})
+
+scrollToTop.addEventListener("click", function(){
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+})
+
+//Services section - Modal
 const serviceModal = document.querySelectorAll(".service-modal")
 const learnMoreBtn = document.querySelectorAll(".learn-more-btn")
 const modalCloseBtn = document.querySelectorAll(".modal-close-btn")
@@ -23,7 +63,6 @@ modalCloseBtn.forEach(button => {
 })
 
 //Portfolio section - Modal
-
 const portfolioModals = document.querySelectorAll(".portfolio-model")
 const imgCard = document.querySelectorAll(".img-card")
 const portfolioCloseBtn = document.querySelectorAll(".portfolio-close-btn")
