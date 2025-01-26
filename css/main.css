@@ -197,6 +197,9 @@ body {
 .nav-menu-btn {
     display: none;
 }
+main {
+    flex: 1;
+}
 /* === end header === */
 
 /* === Home Section === */
@@ -971,6 +974,60 @@ body {
     padding: 0 15px;
 }
 /* === End Footer Section === */
+
+/* === Media 980px === */
+@media (max-width:980px) {
+    .nav-menu-btn {
+        display: block;
+        position: relative;
+        z-index: 5;
+        background: url(../img/burger.svg) no-repeat center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: .3s linear;
+    }
+    .nav-menu-btn.close {
+        background: url(../img/close.svg) no-repeat center;
+    }
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        align-items: center;
+        background: var(--bg-transparent-color-01);
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        transition: .3s linear;
+    }
+    .nav.active {
+        z-index: 3;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-menu {
+        position: relative;
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+        margin: 20px;
+        padding: 40px;
+        background: var(--modal-bg-color);
+        border-radius: 10px;
+        transform: translateY(-50%);
+        transition: .3s linear;
+    }
+    .nav-menu.active {
+        transform: translateY(0%);
+    }
+    .nav-menu li {
+        text-align: center;
+    }
+}
+
 
 
 

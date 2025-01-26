@@ -39,6 +39,27 @@ scrollToTop.addEventListener("click", function(){
     document.documentElement.scrollTop = 0
 })
 
+// Dark theme
+themeBtn.addEventListener("click", function(){
+    localStorage.setItem("saved-theme", getCurrentTheme())
+    localStorage.setItem("saved-icon", getCurrentIcon())
+})
+
+const savedTheme = localStorage.getItem("saved-theme")
+const savedIcon = localStorage.getItem("saved-icon")
+
+if(savedTheme){
+    document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme")
+    themeBtn.classList[savedIcon === "sun" ? "add": "remove"]("sun")
+}
+
+// Toggle menu
+const navBtn = document.querySelector(".nav-menu-btn")
+const navBar = document.querySelector(".nav")
+const navMenu = document.querySelector(".nav-menu")
+const navLinks = document.querySelectorAll(".nav-link")
+
+
 //Services section - Modal
 const serviceModal = document.querySelectorAll(".service-modal")
 const learnMoreBtn = document.querySelectorAll(".learn-more-btn")
@@ -98,3 +119,4 @@ var swiper = new Swiper(".client-swiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
