@@ -40,7 +40,16 @@ scrollToTop.addEventListener("click", function(){
 })
 
 // Dark theme
+const themeBtn = document.querySelector(".theme-btn")
+// Function to get the current theme
+const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light"
+// Function to get current sign
+const getCurrentIcon = () => themeBtn.classList.contains("sun") ? "sun" : "moon"
+
 themeBtn.addEventListener("click", function(){
+    document.body.classList.toggle("dark-theme")
+    themeBtn.classList.toggle("sun")
+
     localStorage.setItem("saved-theme", getCurrentTheme())
     localStorage.setItem("saved-icon", getCurrentIcon())
 })
