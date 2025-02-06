@@ -40,6 +40,7 @@ scrollToTop.addEventListener("click", function(){
 })
 
 // Dark theme
+
 const themeBtn = document.querySelector(".theme-btn")
 // Function to get the current theme
 const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light"
@@ -63,6 +64,7 @@ if(savedTheme){
 }
 
 // Toggle menu
+
 const navBtn = document.querySelector(".nav-menu-btn")
 const navBar = document.querySelector(".nav")
 const navMenu = document.querySelector(".nav-menu")
