@@ -177,7 +177,7 @@ main {
     flex: 1;
 }
 
-/* ===header=== */
+/* Header */
 .header {
     position: fixed;
     z-index: 10;
