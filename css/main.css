@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 :root {
     /* Main theme colors */
     --first-color: #0e2431;
@@ -111,12 +110,12 @@ body {
     background: var(--body-bg-color);
     overflow-x: hidden;
 }
-.container {
+/* .container {
     min-width: 1250px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-}
+} */
 
 /* Scroll to top button  */
 .scrollToTop {
@@ -315,7 +314,7 @@ main {
         transform: translateY(10px);
     }
 }
-/* End Home */
+/* end Home */
 
 /* Styles for all sections */
 .section {
@@ -557,7 +556,7 @@ main {
     transform: scale(1.03);
     cursor: pointer;
 }
-/* End Skills */
+/* end Skills */
 
 /* Services */
 .services-description {
@@ -658,9 +657,9 @@ main {
     color: var(--second-color);
     margin-top: 15px;
 }
-/* === End Services Section === */
+/* end Services */
 
-/* === Portfolio Section === */
+/* Portfolio */
 .portfolio-wrapper {
     width: 100%;
     display: flex;
@@ -770,48 +769,7 @@ main {
     margin: 20px;
     cursor: pointer;
 }
-/* End Portfolio */
-
-/* Contact */
-.get-in-touch {
-    padding: 60px 20px;
-}
-.get-in-touch .contact-card {
-    display: flex;
-    position: relative;
-    width: 90%;
-    padding: 50px;
-    border-radius: 10px;
-    column-gap: 50px;
-    background: var(--bg-transparent-color);
-    box-shadow: var(--box-shadow);
-}
-.contact-card .title {
-    text-transform: uppercase;
-    line-height: 1.5;
-}
-.contact-card h4 {
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.2;
-}
-.contact-card h3 {
-    font-size: 36px;
-    font-weight: 400;
-}
-.contact-card h2 {
-    font-size: 72px;
-    font-weight: 700;
-    background: linear-gradient(to top, transparent 0%, var(--first-color) 30%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0.9;
-}
-.get-in-touch-link {
-    margin-top: 90px;
-    margin-bottom: 30px;
-}
-/* end Contact */
+/* end Portfolio */
 
 /* === Contact Me Section === */
 .contact-wrapper {
