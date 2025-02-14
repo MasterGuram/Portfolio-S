@@ -40,7 +40,6 @@ scrollToTop.addEventListener("click", function(){
 })
 
 // Dark theme
-
 const themeBtn = document.querySelector(".theme-btn")
 // Function to get the current theme
 const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light"
@@ -84,7 +83,7 @@ navLinks.forEach(function(link){
     })
 })
 
-//Services section - Modal
+//Services 
 const serviceModal = document.querySelectorAll(".service-modal")
 const learnMoreBtn = document.querySelectorAll(".learn-more-btn")
 const modalCloseBtn = document.querySelectorAll(".modal-close-btn")
@@ -107,7 +106,7 @@ modalCloseBtn.forEach(button => {
     })
 })
 
-//Portfolio section - Modal
+//Portfolio 
 const portfolioModals = document.querySelectorAll(".portfolio-model")
 const imgCard = document.querySelectorAll(".img-card")
 const portfolioCloseBtn = document.querySelectorAll(".portfolio-close-btn")
@@ -143,4 +142,16 @@ var swiper = new Swiper(".client-swiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  ScrollReveal({
+    reset: true,
+    distance: "60px",
+    duration: 2500,
+    delay: 100
+  })
+
+  ScrollReveal().reveal('.home-info h1', {delay: 300, origin: "left"});
+  ScrollReveal().reveal('.home-img', {delay: 400, origin: "right"});
+  ScrollReveal().reveal('.home-info h3, .home-info p', {delay: 400, origin: "left"});
+
 
