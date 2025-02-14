@@ -1046,9 +1046,13 @@ main {
     .info-group {
         align-items: flex-start;
     }
-    .info-group ul,
-    .follow-group ul {
+    .info-group ul {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .follow-group ul {
+        flex-direction: row;
         align-items: flex-start;
         gap: 20px;
     }
