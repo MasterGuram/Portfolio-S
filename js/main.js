@@ -11,20 +11,17 @@ window.addEventListener("scroll", function(){
 
     section.forEach(function(current){
         let sectionHight = current.offsetHeight
-        let sectionTop = current.offsetYop - 50
+        let sectionTop = current.offsetYop - 100
         let sectionId = current.getAttribute("id")
         let navItem = document.querySelector(`.nav-item a[href*="${sectionId}"]`)
 
         if(navItem){
-
             if(scrollY > sectionTop && scrollY <= sectionTop + sectionHight){
             navItem.classList.add("active")
             } else {
             navItem.classList.remove("active")
             }
         }
-
-        
     })
 })
 
@@ -63,7 +60,6 @@ if(savedTheme){
 }
 
 // Toggle menu
-
 const navBtn = document.querySelector(".nav-menu-btn")
 const navBar = document.querySelector(".nav")
 const navMenu = document.querySelector(".nav-menu")
@@ -150,8 +146,10 @@ var swiper = new Swiper(".client-swiper", {
     delay: 100
   })
 
-  ScrollReveal().reveal('.home-info h1', {delay: 300, origin: "left"});
-  ScrollReveal().reveal('.home-img', {delay: 400, origin: "right"});
+  ScrollReveal().reveal('.inner-title, .inner-second-title', {opacity: 0, delay: 400});
+  ScrollReveal().reveal('.home-info h1, .about-img', {delay: 300, origin: "left"});
+  ScrollReveal().reveal('.home-img, .description', {delay: 400, origin: "right"});
   ScrollReveal().reveal('.home-info h3, .home-info p', {delay: 400, origin: "left"});
+  ScrollReveal().reveal('.skills-description', {delay: 500, scale: 0.5});
 
 
