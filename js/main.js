@@ -79,6 +79,56 @@ navLinks.forEach(function(link){
     })
 })
 
+// Slide animations
+const revealConfiguration = [
+    {selector: '.inner-title, .inner-second-title', config: {opacity: 0, delay: 400}},
+    {selector: '.home-info h1, .about-img', config: {delay: 300, origin: "left"}},
+    {selector: '.home-img, .description', config: {delay: 400, origin: "right"}},
+    {selector: '.home-info h3, .home-info p', config: {delay: 400, origin: "left"}},
+    {selector: '.skills-description, .services-description', config: {delay: 500, scale: 0.5}},
+    {selector: '.education', config: {delay: 500, origin: "bottom", interval: 300}},
+    {selector: '.work-exp .experience-card, .services-container', config: {delay: 500, origin: "bottom", interval: 600}},
+]
+
+function initializeScrollReveal() {
+    window.sr = ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 100
+      })
+      revealConfiguration.forEach(({selector, config}) => {
+        sr.reveal(selector, config)
+      })
+}
+
+initializeScrollReveal()
+
+// ScrollRevel disable function
+function deisableScrollReveal() {
+    sr.clean() // Cleans all element animations
+    document.documentElement.style.overflowY = "hidden"
+    document.body.style.overflowY = "hidden"
+
+    revealConfiguration.forEach(({selector}) => {
+        document.querySelectorAll(selector).forEach(el => {
+            el.style.transform = ""
+            el.style.opacity = ""
+            el.style.transition = ""
+            el.style.visibility = ""
+        })
+    })
+    console.log("function off");
+}
+
+// ScrollReveal enable function
+function enableScrollReveal() {
+    document.documentElement.style.overflowY = ""
+    document.body.style.overflowY = ""
+    initializeScrollReveal()
+    console.log("function on");
+}
+
 //Services 
 const serviceModal = document.querySelectorAll(".service-modal")
 const learnMoreBtn = document.querySelectorAll(".learn-more-btn")
@@ -86,6 +136,7 @@ const modalCloseBtn = document.querySelectorAll(".modal-close-btn")
 
 const modal = function(modalClick){
     serviceModal[modalClick].classList.add("active")
+    deisableScrollReveal()
 }
 
 learnMoreBtn.forEach((button, i) => {
@@ -99,6 +150,7 @@ modalCloseBtn.forEach(button => {
         serviceModal.forEach(modal => {
             modal.classList.remove("active")
         })
+        enableScrollReveal()
     })
 })
 
@@ -139,17 +191,8 @@ var swiper = new Swiper(".client-swiper", {
     },
   });
 
-  ScrollReveal({
-    reset: true,
-    distance: "60px",
-    duration: 2500,
-    delay: 100
-  })
 
-  ScrollReveal().reveal('.inner-title, .inner-second-title', {opacity: 0, delay: 400});
-  ScrollReveal().reveal('.home-info h1, .about-img', {delay: 300, origin: "left"});
-  ScrollReveal().reveal('.home-img, .description', {delay: 400, origin: "right"});
-  ScrollReveal().reveal('.home-info h3, .home-info p', {delay: 400, origin: "left"});
-  ScrollReveal().reveal('.skills-description', {delay: 500, scale: 0.5});
+
+
 
 

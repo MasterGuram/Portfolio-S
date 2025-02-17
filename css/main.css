@@ -619,11 +619,11 @@ main {
     background: var(--bg-transparent-color);
     visibility: hidden;
     opacity: 0;
-    transition: .3s linear;
 }
 .service-modal.active {
     visibility: visible;
     opacity: 1;
+    transition: .3s linear;
 }
 .service-modal-body {
     max-width: 600px;
@@ -966,9 +966,6 @@ main {
 }
 
 @media (max-width: 1040px) {
-    /* .video__content {
-        width: 100%;
-    } */
     .footer__menu {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1032,6 +1029,15 @@ main {
     }
 }
 
+@media (max-width: 700px) {
+    .second-row {
+        flex-direction: column;
+    }
+    .second-row input {
+        width: 100%;
+    }
+}
+
 @media (max-width: 520px) {
     .list-item {
         flex-direction: column;
@@ -1058,6 +1064,16 @@ main {
     }
     .info-group a {
         padding: 10px 0;
+    }
+    .education,
+    .work-exp .experience-card {
+        min-width: 295px;
+    }
+    .service-modal-body h3 {
+        font-size: 25px;
+    }
+    .service-modal-body {
+        padding: 40px 15px 15px;
     }
 }
 
