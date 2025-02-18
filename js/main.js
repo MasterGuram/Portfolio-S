@@ -85,9 +85,9 @@ const revealConfiguration = [
     {selector: '.home-info h1, .about-img', config: {delay: 300, origin: "left"}},
     {selector: '.home-img, .description', config: {delay: 400, origin: "right"}},
     {selector: '.home-info h3, .home-info p', config: {delay: 400, origin: "left"}},
-    {selector: '.skills-description, .services-description', config: {delay: 500, scale: 0.5}},
+    {selector: '.skills-description, .services-description, .portfolio-img-card, .contact-right p, .contact-left h2', config: {delay: 500, scale: 0.5}},
     {selector: '.education', config: {delay: 500, origin: "bottom", interval: 300}},
-    {selector: '.work-exp .experience-card, .services-container', config: {delay: 500, origin: "bottom", interval: 600}},
+    {selector: '.work-exp .experience-card, .services-container, .contact-list li, .first-row, .second-row, .third-row', config: {delay: 500, origin: "bottom", interval: 600}},
 ]
 
 function initializeScrollReveal() {
@@ -161,6 +161,7 @@ const portfolioCloseBtn = document.querySelectorAll(".portfolio-close-btn")
 
 const portfolioModal = function(modalClick){
     portfolioModals[modalClick].classList.add("active")
+    deisableScrollReveal()
 }
 
 imgCard.forEach((button, i) => {
@@ -174,6 +175,7 @@ portfolioCloseBtn.forEach(button => {
         portfolioModals.forEach(modelView => {
             modelView.classList.remove("active")
         })
+        enableScrollReveal() // enable scroll after the icon close
     })
 })
 

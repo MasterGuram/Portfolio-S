@@ -110,12 +110,12 @@ body {
     background: var(--body-bg-color);
     overflow-x: hidden;
 }
-/* .container {
-    min-width: 1250px;
+.container {
+    /* min-width: 1250px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; */
     padding: 0 15px;
-} */
+}
 
 /* Scroll to top button  */
 .scrollToTop {
@@ -1027,6 +1027,10 @@ main {
     .nav-menu li {
         text-align: center;
     }
+    .contact-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1069,10 +1073,12 @@ main {
     .work-exp .experience-card {
         min-width: 295px;
     }
-    .service-modal-body h3 {
+    .service-modal-body h3,
+    .portfolio-model-body h3 {
         font-size: 25px;
     }
-    .service-modal-body {
+    .service-modal-body,
+    .portfolio-model-body {
         padding: 40px 15px 15px;
     }
 }
