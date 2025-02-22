@@ -111,9 +111,6 @@ body {
     overflow-x: hidden;
 }
 .container {
-    /* min-width: 1250px;
-    width: 100%;
-    margin: 0 auto; */
     padding: 0 15px;
 }
 
@@ -1065,10 +1062,6 @@ main {
 }
 
 @media (max-width: 450px) {
-    /* .about-group,
-    .follow-group {
-        text-align: left;
-    } */
     .info-group {
         align-items: flex-start;
     }
