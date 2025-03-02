@@ -87,7 +87,7 @@ const revealConfiguration = [
     {selector: '.home-info h3, .home-info p', config: {delay: 400, origin: "left"}},
     {selector: '.skills-description, .services-description, .portfolio-img-card, .contact-right p, .contact-left h2', config: {delay: 300, scale: 0.5}},
     {selector: '.education', config: {delay: 500, origin: "bottom", interval: 300}},
-    {selector: '.work-exp .experience-card, .services-container, .contact-list li, .first-row, .second-row, .third-row', config: {delay: 300, origin: "bottom", interval: 500}},
+    {selector: '.work-exp .experience-card, .services-container, .contact-list li, .first-row, .second-row, .third-row', config: {delay: 300, origin: "bottom", interval: 300}},
 ]
 
 function initializeScrollReveal() {
