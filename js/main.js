@@ -129,7 +129,7 @@ function enableScrollReveal() {
     console.log("function on");
 }
 
-//Services 
+// Services 
 const serviceModal = document.querySelectorAll(".service-modal")
 const learnMoreBtn = document.querySelectorAll(".learn-more-btn")
 const modalCloseBtn = document.querySelectorAll(".modal-close-btn")
@@ -192,6 +192,23 @@ var swiper = new Swiper(".client-swiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+// Message
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop actual form submission
+
+    // Optionally clear the form
+    this.reset();
+
+    // Show the success message
+    const successMessage = document.getElementById('success-message');
+    successMessage.style.display = 'block';
+
+    // Hide the message after a few seconds
+    setTimeout(() => {
+        successMessage.style.display = 'none';
+    }, 5000); // 5 seconds
+});
 
 
 
