@@ -240,7 +240,6 @@ main {
 main {
     flex: 1;
 }
-/* end Header */
 
 /* Styles for all sections */
 .section {
@@ -362,7 +361,6 @@ main {
         transform: translateY(10px);
     }
 }
-/* end Home */
 
 /* About */
 .about-wrapper {
@@ -420,7 +418,6 @@ main {
     color: var(--third-color);
     font-size: var(--small-font-size);
 }
-/* end About */
 
 /* Skills */
 .skills .inner-content {
@@ -567,7 +564,6 @@ main {
     transform: scale(1.03);
     cursor: pointer;
 }
-/* end Skills */
 
 /* Services */
 .services-description {
@@ -668,7 +664,6 @@ main {
     color: var(--second-color);
     margin-top: 15px;
 }
-/* end Services */
 
 /* Portfolio */
 .portfolio-wrapper {
@@ -780,7 +775,6 @@ main {
     margin: 20px;
     cursor: pointer;
 }
-/* end Portfolio */
 
 /* Contact */
 .contact-wrapper {
@@ -864,7 +858,6 @@ main {
 .second-row input {
     width: 48%;
 }
-/* end Contact */
 
 /* Footer */
 .footer {
@@ -926,7 +919,6 @@ main {
     text-align: center;
     padding: 0 15px;
 }
-/* end Footer */
 
 @media (max-width: 1230px) {
     .footer-wrapper {
