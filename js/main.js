@@ -81,13 +81,13 @@ navLinks.forEach(function(link){
 
 // Slide animations
 const revealConfiguration = [
-    {selector: '.inner-title, .inner-second-title', config: {opacity: 0, delay: 400}},
-    {selector: '.home-info h1, .about-img', config: {delay: 300, origin: "left"}},
-    {selector: '.home-img, .description', config: {delay: 400, origin: "right"}},
-    {selector: '.home-info h3, .home-info p', config: {delay: 400, origin: "left"}},
-    {selector: '.skills-description, .services-description, .portfolio-img-card, .contact-right p, .contact-left h2', config: {delay: 300, scale: 0.5}},
-    {selector: '.education', config: {delay: 500, origin: "bottom", interval: 300}},
-    {selector: '.work-exp .experience-card, .services-container, .contact-list li, .first-row, .second-row, .third-row', config: {delay: 300, origin: "bottom", interval: 300}},
+    {selector: '.inner-title, .inner-second-title', config: {opacity: 0, delay: 200}},
+    {selector: '.home-info h1, .about-img', config: {delay: 100, origin: "left"}},
+    {selector: '.home-img, .description', config: {delay: 200, origin: "right"}},
+    {selector: '.home-info h3, .home-info p', config: {delay: 200, origin: "left"}},
+    {selector: '.skills-description, .services-description, .portfolio-img-card, .contact-right p, .contact-left h2', config: {delay: 100, scale: 0.5}},
+    {selector: '.education', config: {delay: 300, origin: "bottom", interval: 100}},
+    {selector: '.work-exp .experience-card, .services-container, .contact-list li, .first-row, .second-row, .third-row', config: {delay: 100, origin: "bottom", interval: 100}},
 ]
 
 function initializeScrollReveal() {
@@ -95,7 +95,6 @@ function initializeScrollReveal() {
         reset: true,
         distance: "60px",
         duration: 2500,
-        delay: 100
       })
       revealConfiguration.forEach(({selector, config}) => {
         sr.reveal(selector, config)
