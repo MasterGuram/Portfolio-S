@@ -94,7 +94,7 @@ function initializeScrollReveal() {
     window.sr = ScrollReveal({
         reset: false,
         distance: "60px",
-        duration: 1000,
+        duration: 1000
       })
       revealConfiguration.forEach(({selector, config}) => {
         sr.reveal(selector, config)
