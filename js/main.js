@@ -92,9 +92,9 @@ const revealConfiguration = [
 
 function initializeScrollReveal() {
     window.sr = ScrollReveal({
-        reset: true,
+        reset: false,
         distance: "60px",
-        duration: 2500,
+        duration: 600,
       })
       revealConfiguration.forEach(({selector, config}) => {
         sr.reveal(selector, config)
