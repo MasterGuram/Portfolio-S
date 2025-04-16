@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio-S Setup Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    code {
+      background-color: #ecf0f1;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    pre {
+      background-color: #ecf0f1;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Portfolio Template Setup Guide</h1>
+
+  <p>
+    Welcome to the <strong>Portfolio</strong> template by MasterGuram. This guide will walk you through the steps to install, customize, and update your personal portfolio website using this template.
+  </p>
+
+  <!-- Section: Installation -->
+  <h2>1. Installation</h2>
+
+  <ol>
+    <li>Unzip downloaded ZIP file</li>
+    <li>Open the folder with any code editor (e.g., VS Code).</li>
+    <li>You can preview the site by opening <code>index.html</code> in your browser.</li>
+  </ol>
+
+  <!-- Section: Editing the Template -->
+  <h2>2. Editing the Template Files</h2>
+
+  <p>Open the project folder in your preferred code editor (e.g., VS Code).</p>
+
+  <ul>
+    <li><strong>index.html</strong>: Main HTML file containing the structure of your portfolio.</li>
+    <li><strong>css/</strong>: Contains CSS files for styling.</li>
+    <li><strong>js/</strong>: Contains JavaScript files for interactivity.</li>
+    <li><strong>img/</strong>: Place your images here.</li>
+    <li><strong>webfonts/</strong>: Contains font files used in the template.</li>
+    <li><strong>CV.pdf</strong>: Replace with your own CV or resume.</li>
+  </ul>
+
+  <h3>Editing Sections in <code>index.html</code></h3>
+
+  <p>Each section of the homepage is labeled and organized. Here’s how to edit them:</p>
+
+  <!-- Home Section -->
+  <h4>🔷 Home Section</h4>
+  <p>
+    Located at the top of <code>index.html</code>, this section includes your name, title, and social links.
+  </p>
+        <pre><code>
+    &lt;section class="home" id="home"&gt;
+        </code></pre>
+  <ul>
+    <li>Add social links (href="social link URL") as needed and icons (&lt;i class="fa-brands fa-facebook-f"&gt;&lt;/i&gt;). Icons can be found here: https://remixicon.com/
+        <pre><code>
+    &lt;a href="#"&gt;
+        &lt;i class="fa-brands fa-facebook-f"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+        </code></pre>
+    </li>
+    <li>Replace <code>Frank</code> with your name.
+        <pre><code>
+    &lt;h1 class="home-info"&gt;Hi, I am Frank&lt;/h1&gt;
+        </code></pre>
+    </li>
+    <li>Update your role and short description.
+        <pre><code>
+    &lt;h3&gt;Front-End Developer&lt;/h3&gt;
+    &lt;p&gt;I create stunning websites for your business.&lt;/p&gt;
+        </code></pre>
+    </li>
+    <li>Replace the profile image 'Frank1.jpg' with your own
+        <pre><code>
+    &lt;div class="home-img"&gt;
+        &lt;img src="img/Frank1.jpg" alt="client1"&gt;
+    &lt;/div&gt;
+        </code></pre>
+    </li>
+  </ul>
+
+  <!-- About Section -->
+  <h4>🔷 About Me Section</h4>
+        <pre><code>
+    &lt;section class="about section" id="about"&gt;
+        </code></pre>
+  <ul>
+    </li>
+    <li>Replace the image 'Frank2.jpg' with your own
+        <pre><code>
+    &lt;div class="about-img"&gt;&lt;img src="img/Frank2.jpg" alt="about"&gt;&lt;/div&gt;
+        </code></pre>
+    </li>
+    <li>Replace <code>Frank</code> with your name.
+        <pre><code>
+    &lt;h1 class="home-info"&gt;Hi, I am Frank&lt;/h1&gt;
+        </code></pre>
+    </li>
+    <li>Edit the content to describe yourself, your skills, or experience.
+        <code><pre>
+    &lt;h4&gt;A Lead&lt;span&gt; Front-End Developer&lt;/span&gt; based in 
+    &lt;span&gt;California&lt;/span&gt;&lt;/h4&gt;
+    &lt;p&gt;
+        I design and develop services for customers specializing creating stylish, modern websites,
+        web services and online stores. My passion is to design
+        digital user experiences through
+        meaningful interactions. Check out my Portfolio
+    &lt;/p&gt;
+        </pre></code>
+    </li>
+  </ul>
+
+  <!-- Skills Section -->
+  <h4>🔷 Skills Section</h4>
+
+
+  <!-- Portfolio/Projects Section -->
+  <h4>🔷 Portfolio Section</h4>
+  <p>This section typically includes image thumbnails or project cards with links.</p>
+  <pre><code>&lt;div class="project"&gt;
+  &lt;img src="img/project1.jpg" alt="Project 1"&gt;
+  &lt;h3&gt;Project Title&lt;/h3&gt;
+  &lt;p&gt;Short description&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+  <ul>
+    <li>Replace <code>project1.jpg</code> with your own image in the <code>img/</code> folder.</li>
+    <li>Edit the title and description to reflect your actual project.</li>
+    <li>Add new projects by duplicating the <code>.project</code> div.</li>
+  </ul>
+
+  <!-- Skills Section -->
+  <h4>🔷 Skills</h4>
+  <p>Usually represented as icons, progress bars, or a list.</p>
+  <pre><code>&lt;li&gt;HTML5&lt;/li&gt;
+&lt;li&gt;CSS3&lt;/li&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;</code></pre>
+  <ul>
+    <li>Replace or reorder items based on your skillset.</li>
+    <li>Add icons or adjust styles in CSS for visual enhancements.</li>
+  </ul>
+
+  <!-- Contact Section -->
+  <h4>🔷 Contact</h4>
+  <pre><code>&lt;form&gt;
+  &lt;input type="text" name="name" placeholder="Your Name"&gt;
+  &lt;input type="email" name="email" placeholder="Your Email"&gt;
+  &lt;textarea placeholder="Your Message"&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+  <ul>
+    <li>Edit form labels or placeholders.</li>
+    <li>Update the action method if integrating with a backend/email service (like Formspree, EmailJS).</li>
+  </ul>
+
+  <!-- Footer Section -->
+  <h4>🔷 Footer</h4>
+  <pre><code>&lt;footer&gt;
+  &copy; 2025 Your Name. All rights reserved.
+&lt;/footer&gt;</code></pre>
+  <ul>
+    <li>Replace “Your Name” with your actual name.</li>
+    <li>Optionally add links to social media or contact info.</li>
+  </ul>
+
+  <!-- Section: Updating the Template -->
+  <h2>3. Updating the Template</h2>
+
+  <p>After making changes, view them by opening <code>index.html</code> in your browser.</p>
+
+  <p>To deploy your portfolio online:</p>
+  <ol>
+    <li>Create a GitHub repository.</li>
+    <li>Push your local files to it using Git.</li>
+    <li>In your repository settings, go to <strong>Pages</strong> and enable GitHub Pages from the root of the main branch.</li>
+    <li>Your site will be live at: <code>https://yourusername.github.io/your-repo-name/</code></li>
+  </ol>
+
+  <!-- Section: Additional Resources -->
+  <h2>4. Additional Resources</h2>
+
+  <ul>
+    <li><a href="https://pages.github.com/" target="_blank">GitHub Pages Documentation</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs: HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs: CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript</a></li>
+  </ul>
+
+  <p>If you need help, open an issue on <a href="https://github.com/MasterGuram/Portfolio-S/issues" target="_blank">the repository</a>.</_

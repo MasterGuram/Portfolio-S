@@ -187,6 +187,7 @@ main {
 }
 
 /* Header */
+.start{margin-top: 50px;}
 .header {
     position: fixed;
     z-index: 10;
