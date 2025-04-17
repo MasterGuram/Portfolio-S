@@ -143,41 +143,92 @@
 
   <!-- Skills Section -->
   <h4>🔷 Skills Section</h4>
-
-
-  <!-- Portfolio/Projects Section -->
-  <h4>🔷 Portfolio Section</h4>
-  <p>This section typically includes image thumbnails or project cards with links.</p>
-  <pre><code>&lt;div class="project"&gt;
-  &lt;img src="img/project1.jpg" alt="Project 1"&gt;
-  &lt;h3&gt;Project Title&lt;/h3&gt;
-  &lt;p&gt;Short description&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+        <pre><code>
+    &lt;section class="skills section" id="skills"&gt;
+        </code></pre>
   <ul>
-    <li>Replace <code>project1.jpg</code> with your own image in the <code>img/</code> folder.</li>
-    <li>Edit the title and description to reflect your actual project.</li>
-    <li>Add new projects by duplicating the <code>.project</code> div.</li>
+    <li>Edit the text
+        <code><pre>
+    &lt;p&gt;
+      For more than 5 years our experts have been accomplishing enough with modern Web Development,
+      new generation web and app programing language.
+    &lt;/p&gt;
+        </pre></code>
+    </li>
+    <li>Edit 'Education' section
+        <pre><code>
+    &lt;li class="item"&gt;
+      &lt;span class="year"&gt;2020-2021&lt;/span&gt;
+      &lt;p>Ph.D in Horriblensess - Harvard University, Cambridge, MA&lt;/p&gt;
+    &lt;/li&gt;
+        </code></pre>
+    </li>
+    <li>Edit the information in the 'Skills' section inside the 'span' element.
+        <pre><code>
+    &lt;li class="bar"&gt;
+      &lt;div class="info"&gt;
+          &lt;span&gt;html&lt;/span&gt;
+          &lt;span&gt;95%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="line html"&gt;&lt;/div&gt;
+    </li>
+        </code></pre>
+    </li>
+    <li>Edit 'Awards' section
+      <pre><code>
+    &lt;span&gt;2021&lt;/span&gt;
+    &lt;p&gt;&lt;span&gt;Best Developer - University Of Melbourne, NA&lt;/span&gt;&lt;/p&gt;
+      </code></pre>
+    </li>
   </ul>
 
-  <!-- Skills Section -->
-  <h4>🔷 Skills</h4>
-  <p>Usually represented as icons, progress bars, or a list.</p>
-  <pre><code>&lt;li&gt;HTML5&lt;/li&gt;
-&lt;li&gt;CSS3&lt;/li&gt;
-&lt;li&gt;JavaScript&lt;/li&gt;</code></pre>
+  <!-- Services Section -->
+  <h4>🔷 Services Section</h4>
+      <pre><code>
+    &lt;section class="services section" id="services"&gt;
+      </code></pre>
   <ul>
-    <li>Replace or reorder items based on your skillset.</li>
-    <li>Add icons or adjust styles in CSS for visual enhancements.</li>
+    <li>Edit the text inside <code>h3</code>, <code>h4</code> and <code>p</code> elements
+      <code><pre>
+    &lt;h3&gt;Branding & Design&lt;/h3&gt;
+    &lt;h4&gt;What is Brand & Design?&lt;/h4&gt;
+    &lt;p&gt;Brand Design can be defined as one of the crucial marketing practices of creating the name, logo, design, and the symbolic elements...&lt;/p&gt;
+    &lt;h4&gt;What I provide&lt;/h4&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;i class="fa-solid fa-circle-check"&gt;&lt;/i&gt;
+            Logo Design
+        &lt;/li&gt;
+      </pre></code>
+    </li>
+  </ul>
+  <!-- Portfolio Section -->
+  <h4>🔷 Portfolio Section</h4>
+      <pre><code>
+    &lt;section class="portfolio section" id="portfolio"&gt;
+      </code></pre>
+  <ul>
+    <li>Replace <code>project1.jpg</code> with your own image in the <code>img/</code> folder. Edit the title inside <code>h3</code> element. Edit description inside <code>p</code> element.
+      <pre><code>
+    &lt;div class="project"&gt;
+      &lt;img src="img/project1.jpg" alt="Project 1"&gt;
+      &lt;h3&gt;Project Title&lt;/h3&gt;
+      &lt;p&gt;Short description&lt;/p&gt;
+    &lt;/div&gt;</code></pre> 
+    </li>
+    <li>Add new tiles by duplicating the <code>"portfolio-img-card"</code> and <code>"portfolio-model"</code> div</li>
   </ul>
 
   <!-- Contact Section -->
   <h4>🔷 Contact</h4>
-  <pre><code>&lt;form&gt;
-  &lt;input type="text" name="name" placeholder="Your Name"&gt;
-  &lt;input type="email" name="email" placeholder="Your Email"&gt;
-  &lt;textarea placeholder="Your Message"&gt;&lt;/textarea&gt;
-  &lt;button type="submit"&gt;Send&lt;/button&gt;
-&lt;/form&gt;</code></pre>
+      <pre><code>
+    &lt;form&gt;
+      &lt;input type="text" name="name" placeholder="Your Name"&gt;
+      &lt;input type="email" name="email" placeholder="Your Email"&gt;
+      &lt;textarea placeholder="Your Message"&gt;&lt;/textarea&gt;
+      &lt;button type="submit"&gt;Send&lt;/button&gt;
+    &lt;/form&gt;
+      </code></pre>
   <ul>
     <li>Edit form labels or placeholders.</li>
     <li>Update the action method if integrating with a backend/email service (like Formspree, EmailJS).</li>
@@ -198,22 +249,12 @@
 
   <p>After making changes, view them by opening <code>index.html</code> in your browser.</p>
 
-  <p>To deploy your portfolio online:</p>
+  <p>To deploy your portfolio online (optional):</p>
   <ol>
     <li>Create a GitHub repository.</li>
-    <li>Push your local files to it using Git.</li>
+    <li>Push your local files to it using GitHub Desktop.</li>
     <li>In your repository settings, go to <strong>Pages</strong> and enable GitHub Pages from the root of the main branch.</li>
     <li>Your site will be live at: <code>https://yourusername.github.io/your-repo-name/</code></li>
   </ol>
 
-  <!-- Section: Additional Resources -->
-  <h2>4. Additional Resources</h2>
-
-  <ul>
-    <li><a href="https://pages.github.com/" target="_blank">GitHub Pages Documentation</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs: HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs: CSS</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript</a></li>
-  </ul>
-
-  <p>If you need help, open an issue on <a href="https://github.com/MasterGuram/Portfolio-S/issues" target="_blank">the repository</a>.</_
+ 
