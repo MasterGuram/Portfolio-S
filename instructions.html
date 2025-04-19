@@ -1,697 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template Instructions</title>
-    <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; }
-    h1, h2 { color: #2c3e50; }
-    code { background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Portfolio-S Setup Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    code {
+      background-color: #ecf0f1;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    pre {
+      background-color: #ecf0f1;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+</head>
 <body>
-    <h1 class="start">📘 Portfolio Template - Setup & Customization Guide</h1>
 
-    <h2>🛠 Installation</h2>
-    <ol>
+  <h1>Portfolio Template Setup Guide</h1>
+
+  <p>
+    Welcome to the <strong>Portfolio</strong> template by MasterGuram. This guide will walk you through the steps to install, customize, and update your personal portfolio website using this template.
+  </p>
+
+  <!-- Section: Installation -->
+  <h2>1. Installation</h2>
+
+  <ol>
     <li>Unzip downloaded ZIP file</li>
     <li>Open the folder with any code editor (e.g., VS Code).</li>
     <li>You can preview the site by opening <code>index.html</code> in your browser.</li>
-    </ol> 
-    
-    <h2>📝 Editing Content</h2>
-    <p>Update personal info, text, and images directly in these files:</p>
-    <ul>
-      <li><strong>index.html</strong>: main layout, personal intro, project section</li>
-      <li><strong>img/</strong>: replace profile and project images</li>
-      <li><strong>css/style.css</strong>: edit colors, fonts, layout spacing</li>
-      <li><strong>js/main.js</strong>: adjust interactive behavior (e.g., navigation effects)</li>
-    </ul>
-    
-    <!-- All images are located in the img folder. Upload your own by simply dragging and dropping -->
+  </ol>
 
-    <!-- Favicon -->
-     <!-- Replace the favicon.png with your own image -->
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png+xml">
+  <!-- Section: Editing the Template -->
+  <h2>2. Editing the Template Files</h2>
 
-    <!-- Change the title of the site -->
-    <title>Portfolio Website</title> 
-</head>
+  <p>Open the project folder in your preferred code editor (e.g., VS Code).</p>
 
-<body>
-    <!-- Scroll to top button -->
-    <button class="btn scrollToTop flex-center">
-        <!-- you can copy/paste your own icon. Icons can be found on remixicon.com -->
-        <i class="fa-solid fa-arrow-up"></i>
-    </button> 
+  <ul>
+    <li><strong>index.html</strong>: Main HTML file containing the structure of your portfolio.</li>
+    <li><strong>css/</strong>: Contains CSS files for styling.</li>
+    <li><strong>js/</strong>: Contains JavaScript files for interactivity.</li>
+    <li><strong>img/</strong>: Place your images here.</li>
+    <li><strong>webfonts/</strong>: Contains font files used in the template.</li>
+    <li><strong>CV.pdf</strong>: Replace with your own CV or resume.</li>
+  </ul>
 
-    <!-- Light/Dark button -->
-    <div class="theme-btn">
-        <i class="fa-solid fa-moon"></i>
-        <i class="fa-solid fa-sun"></i>
-    </div>
+  <h3>Editing Sections in <code>index.html</code></h3>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-wrapper">
-                <nav class="nav">
-                    <ul class="nav-menu">
-                        <!-- Add or remove menu items -->
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="nav-menu-btn">
-                </div>
-            </div>
-        </div>
-    </header>
+  <p>Each section of the homepage is labeled and organized. Here’s how to edit them:</p>
 
-    <main>
+  <!-- Home Section -->
+  <h4>🔷 Home Section</h4>
+  <p>
+    Located at the top of <code>index.html</code>, this section includes your name, title, and social links.
+  </p>
+        <pre><code>
+    &lt;section class="home" id="home"&gt;
+        </code></pre>
+  <ul>
+    <li>Add social links (href="social link URL") as needed and icons (&lt;i class="fa-brands fa-facebook-f"&gt;&lt;/i&gt;). Icons can be found here: https://remixicon.com/
+        <pre><code>
+    &lt;a href="#"&gt;
+        &lt;i class="fa-brands fa-facebook-f"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+        </code></pre>
+    </li>
+    <li>Replace <code>Frank</code> with your name.
+        <pre><code>
+    &lt;h1 class="home-info"&gt;Hi, I am Frank&lt;/h1&gt;
+        </code></pre>
+    </li>
+    <li>Update your role and short description.
+        <pre><code>
+    &lt;h3&gt;Front-End Developer&lt;/h3&gt;
+    &lt;p&gt;I create stunning websites for your business.&lt;/p&gt;
+        </code></pre>
+    </li>
+    <li>Replace the profile image 'Frank1.jpg' with your own
+        <pre><code>
+    &lt;div class="home-img"&gt;
+        &lt;img src="img/Frank1.jpg" alt="client1"&gt;
+    &lt;/div&gt;
+        </code></pre>
+    </li>
+  </ul>
 
-    <!-- Home -->
-     <section class="home" id="home">
-        <div class="container home-wrapper">
-            <div class="media-icons">
-                <!-- Add inks to social media inside brackets href="link to social media".
-                https://www.facebook.com/
-                https://twitter.com/
-                https://www.instagram.com/
-                https://www.github.com/
-                -->
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-            <div class="home-info">
-                <!-- Change the name -->
-                <h1>Hi, I am Frank</h1>
-                <h3>Front-end Developer</h3>
-                <p>
-                    I create stunning websites for your business.
-                </p>
-                <a href="#contact" class="home-info-link inner-info-link">
-                    Contact me 
-                </a>
-            </div>
-            <div class="home-img">
-                <!-- Replace the profile image 'Frank1.jpg' with your own -->
-                <img src="img/Frank1.jpg" alt="client1">
-            </div>
-        </div>
-        <a href="#about" class="scroll-down">
-            Scroll down 
-            <i class="fa-solid fa-arrow-down"></i>
-        </a>
-     </section>
+  <!-- About Section -->
+  <h4>🔷 About Me Section</h4>
+        <pre><code>
+    &lt;section class="about section" id="about"&gt;
+        </code></pre>
+  <ul>
+    </li>
+    <li>Replace the image 'Frank2.jpg' with your own
+        <pre><code>
+    &lt;div class="about-img"&gt;&lt;img src="img/Frank2.jpg" alt="about"&gt;&lt;/div&gt;
+        </code></pre>
+    </li>
+    <li>Replace <code>Frank</code> with your name.
+        <pre><code>
+    &lt;h1 class="home-info"&gt;Hi, I am Frank&lt;/h1&gt;
+        </code></pre>
+    </li>
+    <li>Edit the content to describe yourself, your skills, or experience.
+        <code><pre>
+    &lt;h4&gt;A Lead&lt;span&gt; Front-End Developer&lt;/span&gt; based in 
+    &lt;span&gt;California&lt;/span&gt;&lt;/h4&gt;
+    &lt;p&gt;
+        I design and develop services for customers specializing creating stylish, modern websites,
+        web services and online stores. My passion is to design
+        digital user experiences through
+        meaningful interactions. Check out my Portfolio
+    &lt;/p&gt;
+        </pre></code>
+    </li>
+  </ul>
 
-     <!-- About -->
-      <section class="about section" id="about">
-        <div class="container flex-center">
-            <h2 class="inner-title">About me</h2>
-            <h3 class="inner-second-title">About me</h3>
-            <div class="about-wrapper">
-                <!-- Replace the image 'Frank2.jpg' with your own -->
-                <div class="about-img"><img src="./img/Frank2.jpg" alt="about"></div>
-                <div class="about-info">
-                    <div class="description">
-                        <!-- Replace the name with your own -->
-                        <h3>I'm Frank</h3>
-                        <!-- Add your personal info -->
-                        <h4>A Lead<span> Front-End Developer</span> based in 
-                        <span>California</span></h4>
-                        <p>
-                            I design and develop services for customers specializing creating stylish, modern websites,
-                            web services and online stores. My passion is to design
-                            digital user experiences through
-                            meaningful interactions. Check out my Portfolio
-                        </p>
-                    </div>
-                    <ul class="professional-list">
-                        <li class="list-item">
-                            <span class="number">5+</span>
-                            <span class="text">Years of experience</span>
-                        </li>
-                        <li class="list-item">
-                            <span class="number">3K+</span>
-                            <span class="text">Happy Customers</span>
-                        </li>
-                        <li class="list-item">
-                            <span class="number">5+</span>
-                            <span class="text">Success Projects</span>
-                        </li>
-                    </ul>
-                    <!-- Upload your CV -->
-                    <a href="CV.pdf" download class="inner-info-link">Download CV
-                        <i class="fa-solid fa-download"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-      </section>
+  <!-- Skills Section -->
+  <h4>🔷 Skills Section</h4>
+        <pre><code>
+    &lt;section class="skills section" id="skills"&gt;
+        </code></pre>
+  <ul>
+    <li>Edit the text
+        <code><pre>
+    &lt;p&gt;
+      For more than 5 years our experts have been accomplishing enough with modern Web Development,
+      new generation web and app programing language.
+    &lt;/p&gt;
+        </pre></code>
+    </li>
+    <li>Edit 'Education' section
+        <pre><code>
+    &lt;li class="item"&gt;
+      &lt;span class="year"&gt;2020-2021&lt;/span&gt;
+      &lt;p>Ph.D in Horriblensess - Harvard University, Cambridge, MA&lt;/p&gt;
+    &lt;/li&gt;
+        </code></pre>
+    </li>
+    <li>Edit the information in the 'Skills' section inside the 'span' element.
+        <pre><code>
+    &lt;li class="bar"&gt;
+      &lt;div class="info"&gt;
+          &lt;span&gt;html&lt;/span&gt;
+          &lt;span&gt;95%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="line html"&gt;&lt;/div&gt;
+    </li>
+        </code></pre>
+    </li>
+    <li>Edit 'Awards' section
+      <pre><code>
+    &lt;span&gt;2021&lt;/span&gt;
+    &lt;p&gt;&lt;span&gt;Best Developer - University Of Melbourne, NA&lt;/span&gt;&lt;/p&gt;
+      </code></pre>
+    </li>
+  </ul>
 
-     <!-- Skills -->
-     <section class="skills section" id="skills">
-        <div class="container flex-center">
-            <h2 class="inner-title">Skills</h2>
-            <h3 class="inner-second-title">Skills</h3>
-            <div class="inner-content">
-                <div class="skills-description">
-                    <h3>Education & Skills</h3>
-                    <!-- Simply edit the text below to include information about your experience-->
-                    <p>
-                        For more than 5 years our experts have been accomplishing enough with modern Web Development,
-                        new generation web and app programing language.
-                    </p>
-                </div>
-                <div class="skills-info education-all">
-                    <div class="education">
-                        <h4 class="label">Education</h4>
-                        <ul class="education-list">
-                            <li class="item">
-                                <span class="year">2020-2021</span>
-                                <p>Ph.D in Horriblensess - Harvard University, Cambridge, MA</p>
-                            </li>
-                            <li class="item">
-                                <span class="year">2018-2019</span>
-                                <p>Computer Science - Imperialize Technical Institute</p>
-                            </li>
-                            <li class="item">
-                                <span class="year">2016-2018</span>
-                                <p>Graphic Designer - Web Graphy, Los Angeles, CA</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="education">
-                        <h4 class="label">Skills</h4>
-                        <ul class="bars">
-                            <li class="bar">
-                                <div class="info">
-                                    <span>html</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="line html"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>css</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="line css"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>JavaScript</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="line javascript"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Jquery</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="line jquery"></div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>php</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="line php"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="education">
-                        <h4 class="label">Awards</h4>
-                        <ul class="education-list">
-                            <li class="item">
-                                <span>2021</span>
-                                <p><span>Best Developer - University Of Melbourne, NA</span></p>
-                            </li>
-                            <li class="item">
-                                <span>2020</span>
-                                <p><span>Best Writer - Online Typodev Solution Ltd.</span></p>
-                            </li>
-                            <li class="item">
-                                <span>2019</span>
-                                <p><span>Best Freelancer - Fiver & Upwork Level 2 & Top Rated</span></p>
-                            </li>
-                        </ul>
-                    </div>
+  <!-- Services Section -->
+  <h4>🔷 Services Section</h4>
+      <pre><code>
+    &lt;section class="services section" id="services"&gt;
+      </code></pre>
+  <ul>
+    <li>Edit the text inside <code>h3</code>, <code>h4</code> and <code>p</code> elements
+      <code><pre>
+    &lt;h3&gt;Branding & Design&lt;/h3&gt;
+    &lt;h4&gt;What is Brand & Design?&lt;/h4&gt;
+    &lt;p&gt;Brand Design can be defined as one of the crucial marketing practices of creating the name, logo, design, and the symbolic elements...&lt;/p&gt;
+    &lt;h4&gt;What I provide&lt;/h4&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;i class="fa-solid fa-circle-check"&gt;&lt;/i&gt;
+            Logo Design
+        &lt;/li&gt;
+      </pre></code>
+    </li>
+  </ul>
+  <!-- Portfolio Section -->
+  <h4>🔷 Portfolio Section</h4>
+      <pre><code>
+    &lt;section class="portfolio section" id="portfolio"&gt;
+      </code></pre>
+  <ul>
+    <li>Replace <code>project1.jpg</code> with your own image in the <code>img/</code> folder. Edit the title inside <code>h3</code> element. Edit description inside <code>p</code> element.
+      <pre><code>
+    &lt;div class="project"&gt;
+      &lt;img src="img/project1.jpg" alt="Project 1"&gt;
+      &lt;h3&gt;Project Title&lt;/h3&gt;
+      &lt;p&gt;Short description&lt;/p&gt;
+    &lt;/div&gt;</code></pre> 
+    </li>
+    <li>Add new tiles by duplicating the <code>"portfolio-img-card"</code> and <code>"portfolio-model"</code> div</li>
+  </ul>
 
-                </div>
-                <div class="education work-exp">
-                    <h3 class="work-exp-title">Work & Experience</h3>
-                    <div class="skills-info">
-                        <div class="experience-card">
-                            <div class="upper">
-                                <h3>Sr. Graphic Designer</h3>
-                                <h5>Part Time | Office</h5>
-                                <span>2020-2021</span>
-                                <div class="hr"></div>
-                            </div>
-                            <div class="hr"></div>
-                            <h4 class="label">Avada Theme.</h4>
-                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
-                        </div>
-                        <div class="experience-card">
-                            <div class="upper">
-                                <h3>Cr. Web Developer</h3>
-                                <h5>Full Time | InHouse</h5>
-                                <span>2019-2020</span>
-                                <div class="hr"></div>
-                            </div>
-                            <div class="hr"></div>
-                            <h4 class="label">ib-themes ltd.</h4>
-                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
-                        </div>
-                        <div class="experience-card">
-                            <div class="upper">
-                                <h3>Jr. Web Developer</h3>
-                                <h5>Full Time | Remote</h5>
-                                <span>2018-2019</span>
-                                <div class="hr"></div>
-                            </div>
-                            <div class="hr"></div>
-                            <h4 class="label">Creative Gigs.</h4>
-                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section> 
+  <!-- Contact Section -->
+  <h4>🔷 Contact</h4>
+      <pre><code>
+    &lt;form&gt;
+      &lt;input type="text" name="name" placeholder="Your Name"&gt;
+      &lt;input type="email" name="email" placeholder="Your Email"&gt;
+      &lt;textarea placeholder="Your Message"&gt;&lt;/textarea&gt;
+      &lt;button type="submit"&gt;Send&lt;/button&gt;
+    &lt;/form&gt;
+      </code></pre>
+  <ul>
+    <li>Edit form labels or placeholders.</li>
+    <li>Update the action method if integrating with a backend/email service (like Formspree, EmailJS).</li>
+  </ul>
 
-     <!--  Services -->
-     <section class="services section" id="services">
-        <div class="container flex-center">
-            <h2 class="inner-title">Services</h2>
-            <h3 class="inner-second-title">Services</h3>
-            <div class="services-wrapper">
-                <h3 class="services-description">What I provide</h3>
-                <ul class="services-list">
-                    <li class="services-container">
-                        <div class="service-card">
-                            <i class="fa-solid fa-pen-ruler"></i>
-                            <h3>UI/UX Consultancy</h3>
-                            <div class="learn-more-btn">
-                                Learn More
-                                <i class="fa-solid fa-right-long"></i>
-                            </div>
-                        </div>
-                        <div class="service-modal">
-                            <div class="service-modal-body">
-                                <i class="fa-solid fa-xmark modal-close-btn"></i>
-                                <h3>UI/UX Consultancy</h3>
-                                <h4>What is UX consulting?</h4>
-                                <p>UX consulting helps companies improve their product's overall usability and optimize expenses by implementing the right UX processes, methods, and tools.</p>
-                                <h4>What I provide</h4>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Establish the right UX processes
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Create exceptional user experiences
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Discover new business
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Save resources
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="services-container"><div class="service-card">
-                        <i class="fa-solid fa-photo-film"></i>
-                            <h3>Branding & Design</h3>
-                            <div class="learn-more-btn">
-                                Learn More
-                                <i class="fa-solid fa-right-long"></i>
-                            </div>
-                        </div>
-                        <div class="service-modal">
-                            <div class="service-modal-body">
-                                <i class="fa-solid fa-xmark modal-close-btn"></i>
-                                <h3>Branding & Design</h3>
-                                <h4>What is Brand & Design?</h4>
-                                <p>Brand Design can be defined as one of the crucial marketing practices of creating the name, logo, design, and the symbolic elements related to the brand to create a distinctive identity in comparison to the other brands in the market and also providing impetus to the product differentiation.</p>
-                                <h4>What I provide</h4>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Logo Design
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Banner Design
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Visual Identity Packages
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Business Cards & Business Systems
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></li>
-                    <li class="services-container"><div class="service-card">
-                        <i class="fa-solid fa-file-code"></i>
-                            <h3>Web Development</h3>
-                            <div class="learn-more-btn">
-                                Learn More
-                                <i class="fa-solid fa-right-long"></i>
-                            </div>
-                        </div>
-                        <div class="service-modal">
-                            <div class="service-modal-body">
-                                <i class="fa-solid fa-xmark modal-close-btn"></i>
-                                <h3>Web Development</h3>
-                                <h4>What is Web Development?</h4>
-                                <p>Web development services are used to design, build, 
-                                    support, and evolve all types of web-based software.
-                                </p>
-                                <h4>What I provide</h4>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Web application development
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Testing
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Maintenance
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></li>
-                    <li class="services-container"><div class="service-card">
-                        <i class="fa-solid fa-align-left"></i>
-                            <h3>Content Writing</h3>
-                            <div class="learn-more-btn">
-                                Learn More
-                                <i class="fa-solid fa-right-long"></i>
-                            </div>
-                        </div>
-                        <div class="service-modal">
-                            <div class="service-modal-body">
-                                <i class="fa-solid fa-xmark modal-close-btn"></i>
-                                <h3>Content Writing</h3>
-                                <h4>What is Content Writing?</h4>
-                                <p>Content writing is the process of planning, 
-                                    writing and editing web content, 
-                                    typically for digital marketing purposes.</p>
-                                <h4>What I provide</h4>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Web content writing
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Blog writing for websites
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-circle-check"></i>
-                                        Social media content
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></li>
-                </ul>
-            </div>
-        </div>
-     </section>
+  <!-- Footer Section -->
+  <h4>🔷 Footer</h4>
+  <pre><code>&lt;footer&gt;
+  &copy; 2025 Your Name. All rights reserved.
+&lt;/footer&gt;</code></pre>
+  <ul>
+    <li>Replace “Your Name” with your actual name.</li>
+    <li>Optionally add links to social media or contact info.</li>
+  </ul>
 
-     <!-- Portfolio -->
-     <section class="portfolio section" id="portfolio">
-        <div class="container flex-center">
-            <h2 class="inner-title">Portfolio</h2>
-            <h3 class="inner-second-title">Portfolio</h3>
-            <div class="portfolio-wrapper">
-                <div class="portfolio-img-card">
-                    <div class="img-card">
-                        <div class="overlay"></div>
-                        <div class="inf">
-                            <h3>UI/UX Design</h3>
-                            <span></span>
-                        </div>
-                        <!-- You can replace the images as you wish -->
-                        <img src="./img/portfolio-1.jpeg" alt="portfolio">
-                    </div>
-                </div>
-                <div class="portfolio-model">
-                    <div class="portfolio-model-body">
-                        <i class="fa-solid fa-xmark portfolio-close-btn"></i>
-                        <h3>UI/UX Design</h3>
-                        <img src="./img/portfolio-1.jpeg" alt="portfolio">
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="portfolio-img-card">
-                    <div class="img-card">
-                        <div class="overlay"></div>
-                        <div class="inf">
-                            <h3>Branding & Design</h3>
-                            <span></span>
-                        </div>
-                        <img src="./img/portfolio-2.jpeg" alt="portfolio">
-                    </div>
-                </div>
-                <div class="portfolio-model">
-                    <div class="portfolio-model-body">
-                        <i class="fa-solid fa-xmark portfolio-close-btn"></i>
-                        <h3>Branding & Design</h3>
-                        <img src="./img/portfolio-2.jpeg" alt="portfolio">
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="portfolio-img-card">
-                    <div class="img-card">
-                        <div class="overlay"></div>
-                        <div class="inf">
-                            <h3>Web Design</h3>
-                            <span></span>
-                        </div>
-                        <img src="./img/portfolio-3.jpeg" alt="portfolio">
-                    </div>
-                </div>
-                <div class="portfolio-model">
-                    <div class="portfolio-model-body">
-                        <i class="fa-solid fa-xmark portfolio-close-btn"></i>
-                        <h3>Web Design</h3>
-                        <img src="./img/portfolio-3.jpeg" alt="portfolio">
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="portfolio-img-card">
-                    <div class="img-card">
-                        <div class="overlay"></div>
-                        <div class="inf">
-                            <h3>Web Development</h3>
-                            <span></span>
-                        </div>
-                        <img src="./img/portfolio-4.jpeg" alt="portfolio">
-                    </div>
-                </div>
-                <div class="portfolio-model">
-                    <div class="portfolio-model-body">
-                        <i class="fa-solid fa-xmark portfolio-close-btn"></i>
-                        <h3>Web Development</h3>
-                        <img src="./img/portfolio-4.jpeg" alt="portfolio">
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="portfolio-img-card">
-                    <div class="img-card">
-                        <div class="overlay"></div>
-                        <div class="inf">
-                            <h3>Content Writing</h3>
-                            <span></span>
-                        </div>
-                        <img src="./img/portfolio-5.jpeg" alt="portfolio">
-                    </div>
-                </div>
-                <div class="portfolio-model">
-                    <div class="portfolio-model-body">
-                        <i class="fa-solid fa-xmark portfolio-close-btn"></i>
-                        <h3>Content Writing</h3>
-                        <img src="./img/portfolio-5.jpeg" alt="portfolio">
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="portfolio-img-card">
-                    <div class="img-card">
-                        <div class="overlay"></div>
-                        <div class="inf">
-                            <h3>Interface Design</h3>
-                            <span></span>
-                        </div>
-                        <img src="./img/portfolio-6.jpeg" alt="portfolio">
-                    </div>
-                </div>
-                <div class="portfolio-model">
-                    <div class="portfolio-model-body">
-                        <i class="fa-solid fa-xmark portfolio-close-btn"></i>
-                        <h3>Interface Design</h3>
-                        <img src="./img/portfolio-6.jpeg" alt="portfolio">
-                        <p>Lorem ipsum</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
+  <!-- Section: Updating the Template -->
+  <h2>3. Updating the Template</h2>
 
-     <!-- Contact -->
-     <section class="contact section" id="contact">
-        <div class="container flex-center">
-            <h2 class="inner-title">Contact Me</h2>
-            <h3 class="inner-second-title">Contact Me</h3>
-            <div class="contact-wrapper">
-                <div class="contact-left">
-                    <h2>Let's discuss your project</h2>
-                    <ul class="contact-list">
-                        <li>
-                            <h3><i class="fa-solid fa-phone"></i> Phone</h3>
-                            <!-- Change the phone number -->
-                            <span><a href="tel:001237779999">+00 123-777-9999</a></span>
-                        </li>
-                        <li>
-                            <h3><i class="fa-solid fa-envelope"></i> Email Adddress</h3>
-                            <!-- Change the email address -->
-                            <span><a href="mailto:yourmail@email.com"></a>yourmail@email.com</span>
-                        </li>
-                        <li>
-                            <h3><i class="fa-solid fa-location-dot"></i>Official Address</h3>
-                            <!-- Change the address -->
-                            <span><a href="">7249 Brewery Ave. San Francisco, CA 94112</a></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact-right">
-                    <p>I'm always open to discussing product <span>work or partnerships.</span></p>
-                    <!-- in order to receive messages on your email you can create a free account on https://getform.io/ create an endpoint and paste the id inside the action brackets below. 
-                     Add method="POST" after the brackets. Between textarea and placeholder place: name="message" -->
-                    <form action="#" class="form contact-form">
-                        <div class="first-row">
-                            <input placeholder="Name" type="text">
-                        </div>
-                        <div class="second-row">
-                            <input placeholder="Email" type="email">
-                            <input placeholder="Subject" type="text">
-                        </div>
-                        <div class="third-row">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <button class="contact-btn inner-info-link" type="submit">
-                            Send Message
-                        </button>
-                    </form>
-                    <!-- This is a demo message. Please delete it before you start using this site To receive the actual message on your email please follow the instructions: 'row_577' -->
-                    <div id="success-message" style="display: none; color: #614fd0; margin-bottom: 10px;">
-                        ✅ Your message was sent successfully!
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
+  <p>After making changes, view them by opening <code>index.html</code> in your browser.</p>
 
-    </main>
+  <p>To deploy your portfolio online (optional):</p>
+  <ol>
+    <li>Create a GitHub repository.</li>
+    <li>Push your local files to it using GitHub Desktop.</li>
+    <li>In your repository settings, go to <strong>Pages</strong> and enable GitHub Pages from the root of the main branch.</li>
+    <li>Your site will be live at: <code>https://yourusername.github.io/your-repo-name/</code></li>
+  </ol>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-wrapper">
-            <div class="about-group">
-                <!-- Change the name -->
-                <h2>Frank</h2>
-                <p>Frontend Developer</p>
-                <a href="#">About me</a>
-            </div>
-            <div class="hr"></div>
-            <div class="info-group">
-                <h3>More</h3>
-                <ul>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </div>
-            <div class="hr"></div>
-            <div class="follow-group">
-                <h3>Follow</h3>
-                <ul>
-                <!-- Add inks to social media inside brackets href="link to social media".
-                https://www.facebook.com/
-                https://twitter.com/
-                https://www.instagram.com/
-                https://www.github.com/
-                -->
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- Change the name -->
-        <p class="footer-copyright">© <span class="year">2025</span> by Frank. All rights reserved.</p>
-    </footer>
-
-   <script src="./js/swiper-bundle.min.js"></script>
-   <script src="./js/scrollreveal.js"></script>
-   <script src="./js/main.js"></script>
-</body>
-
-</html>
+ 
